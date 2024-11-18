@@ -37,7 +37,7 @@ body{
     top: 10%;
     right: 10%;
     font-weight: bold;
-    color: white;
+    color: bisque;
 }
 
 #btn-play{
@@ -151,7 +151,7 @@ body{
 }
 
 #High-score{
-    color: blue;
+    color: yellow;
 }
 
 #play {
