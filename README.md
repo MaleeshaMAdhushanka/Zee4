@@ -1,4 +1,4 @@
-# Zee4 Car Game 🎮🚗
+![cargame1](https://github.com/user-attachments/assets/cc72b678-d269-4b73-94dd-53e22f3b0eeb)# Zee4 Car Game 🎮🚗
 
 Zee4 Car Game is an exciting 2D car game developed using HTML, CSS, JavaScript, and jQuery. Challenge yourself across multiple levels and avoid collisions while aiming for the highest score!
 
@@ -14,6 +14,9 @@ Zee4 Car Game is an exciting 2D car game developed using HTML, CSS, JavaScript, 
    - Collisions
    - Game over
 6. **High Score Tracking** - Keeps track of your highest score locally.
+
+
+
 
 ## Game Controls 🎮
 
