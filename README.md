@@ -33,4 +33,9 @@ Zee4 Car Game is an exciting 2D car game developed using HTML, CSS, JavaScript, 
 - **Game Logic**: JavaScript & jQuery
 - **Media**: Audio and images for an immersive experience
 
+- 1. Clone this repository:
+   ```bash
+   https://github.com/MaleeshaMAdhushanka/Zee4.git
+   cd zee4-car-game
+
 
