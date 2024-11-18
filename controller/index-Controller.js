@@ -5,7 +5,6 @@ const line_1 = $('#line1');
 const line_2 = $('#line2');
 const line_3 = $('#line3');
 
-// const line_speed = 1;
 
 const car_1 = $('#car1');
 const car_2 = $('#car2');
