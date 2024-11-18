@@ -48,11 +48,24 @@ let isHit = false;
 btnplay_again.click(function () {
     window.location.reload();
 });
+const gameStartAudio = document.getElementById('gameStartAudio');
+    const carStartAudio = document.getElementById('carStartAudio');
+    const carCrashAudio = document.getElementById('carCrashAudio');
+    const carStopAudio = document.getElementById('carStopAudio');
 
 btnPlay.click(function () {
+    
+      // Play the game start audio
+    gameStartAudio.play();
 
     $('#btn-play').fadeOut();
     score_div.fadeIn();
+
+    setTimeout(() => {
+        // After the game starts, play the car start audio
+        carStartAudio.loop = true; // Loop while the car is running
+        carStartAudio.play();
+    }, 10000); 
     countScore();
 
     function processGame() {
@@ -64,6 +77,13 @@ btnPlay.click(function () {
                 isHit = true;
                 cancelAnimationFrame(frameId);
                 $(document).off('keydown');
+                // Stop the car audio
+                carStartAudio.pause();
+                carStartAudio.currentTime = 0;
+                carCrashAudio.play();
+
+
+
             }
             if (!isHit) {
                 processGame();
@@ -73,6 +93,11 @@ btnPlay.click(function () {
                 score_div.fadeOut();
                 final_score.text(score.text());
                 setHighScore(score.text());
+
+                setTimeout(() => {
+                    carStopAudio.play();
+                }, 500);
+
             }
         });
     } processGame();
